@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FriendFinder</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Survey Questions</h2>
+    <hr>
+
+    <h3>About You</h3>
+    <p class="lead">Name (Required)</p>
+    <input type="text" id="name" class="form-control" required>
+
+    <p class="lead">Link to Photo Image (Required)</p>
+    <input type="text" id="photo" class="form-control" required>
+
+    <br>
+    <br>
+
+    <p class="lead m-0">Question 1</p>
+    <p class="lead m-0">How much programming knowledge did you have before entering this bootcamp?</p>
+    <select class="chosen" id="q1">
+        <option value="">Select Option</option>
+        <option value="1">1 (I knew nothing)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (I knew a couple of languages and already have a job programming.)</option>
+    </select>
+    <br>
+    <br>
+    <p class="lead m-0">Question 2</p>
+    <p class="lead m-0">How satisfied are you with this bootcamp?</p>
+    <select class="chosen" id="q2">
+        <option value="">Select Option</option>
+        <option value="1">1 (It sucks.)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (It was well worth it.)</option>
+    </select>
+    <br>
+    <br>
+    <p class="lead m-0">Question 3</p>
+    <p class="lead m-0">How ready are you to have your Saturdays back?</p>
+    <select class="chosen" id="q3">
+        <option value="">Select Option</option>
+        <option value="1">1 (I can go without them.)</option>
+        <option value="2">2</option>
+        <option value="3">3 (I already have nothing planned for the next 2 months!)</option>
+        <option value="4">4</option>
+        <option value="5">5 (I've got vacations and parties planned at least the next 2 weeks.)</option>
+    </select>
+    <br>
+    <br>
+    <p class="lead m-0">Question 4</p>
+    <p class="lead m-0">You learned almost nothing from this bootcamp.</p>
+    <select class="chosen" id="q4">
+        <option value="">Select Option</option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+    </select>
+    <br>
+    <br>
+    <p class="lead m-0">Question 5</p>
+    <p class="lead m-0">You think this was a waste of time.</p>
+    <select class="chosen" id="q5">
+        <option value="">Select Option</option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+    </select>
+    <br>
+    <br>
+    <p class="lead m-0">Question 6</p>
+    <p class="lead m-0">You would recommend this or other similar bootcamps.</p>
+    <select class="chosen" id="q6">
+        <option value="">Select Option</option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+    </select>
+    <br>
+    <br>
+    <p class="lead m-0">Question 7</p>
+    <p class="lead m-0">You would 10/10 spend almost 10 grand to do this over.</p>
+    <select class="chosen" id="q7">
+        <option value="">Select Option</option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+    </select>
+    <br>
+    <br>
+    <p class="lead m-0">Question 8</p>
+    <p class="lead m-0">You can think of more questions that would fit this survey</p>
+    <select class="chosen" id="q8">
+        <option value="">Select Option</option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+    </select>
+    <br>
+    <br>
+    <p class="lead m-0">Question 9</p>
+    <p class="lead m-0">You think the T/A's are pretty awesome.</p>
+    <select class="chosen" id="q9">
+        <option value="">Select Option</option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+    </select>
+    <br>
+    <br>
+    <p class="lead m-0">Question 10</p>
+    <p class="lead m-0">You made some friends here.</p>
+    <select class="chosen" id="q10">
+        <option value="">Select Option</option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+    </select>
+    <br>
+    <br>
+
+    <!-- Submit Button -->
+    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
+        Submit</button>
+
+</div>
+
+<!-- Modal -->
+<div id="results-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title"><strong>Best Match</strong></h2>
+                <button class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h2 id="match-name"></h2>
+                <img id="match-img" style="width: 400px;" alt="">
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    // Capture the form inputs
+    $("#submit").on("click", function(event) {
+        event.preventDefault();
+
+        // Form validation
+        function validateForm() {
+            let isValid = true;
+            $(".form-control").each(function() {
+                if ($(this).val() === "") {
+                    isValid = false;
+                }
+            });
+
+            $(".chosen").each(function() {
+
+                if ($(this).val() === "") {
+                    isValid = false;
+                }
+            });
+            return isValid;
+        }
+
+        // If all required fields are filled
+        if (validateForm()) {
+            // Create an object for the user"s data
+            let userData = {
+                name: $("#name").val(),
+                photo: $("#photo").val(),
+                scores: [
+                    $("#q1").val(),
+                    $("#q2").val(),
+                    $("#q3").val(),
+                    $("#q4").val(),
+                    $("#q5").val(),
+                    $("#q6").val(),
+                    $("#q7").val(),
+                    $("#q8").val(),
+                    $("#q9").val(),
+                    $("#q10").val()
+                ]
+            };
+
+            // AJAX post the data to the friends API.
+            $.post("/api/friends", userData, function(data) {
+
+                // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+                $("#match-name").text(data.name);
+                $("#match-img").attr("src", data.photo);
+                // Show the modal with the best match
+                $("#results-modal").modal("toggle");
+
+            });
+        } else {
+            alert("Please fill out all fields before submitting!");
+        }
+    });
+</script>
+
+</body>
+</html>
